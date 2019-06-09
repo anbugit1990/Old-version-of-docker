@@ -23,8 +23,8 @@ You can disable the nightly or test repository by running the yum-config-manager
 
 $ sudo yum-config-manager --disable docker-ce-nightly
 
-#wget https://download.docker.com/linux/centos/7/x8                                                                                   6_64/test/Packages/containerd.io-1.2.0-3.el7.x86_64.rpm
+#wget https://download.docker.com/linux/centos/7/x86_64/test/Packages/containerd.io-1.2.0-3.el7.x86_64.rpm
 
-#wget https://download.docker.com/linux/centos/7/x86_64/test/Pa                                                                                      ckages/docker-ce-selinux-17.05.0.ce-0.3.rc3.el7.centos.noarch.rpm
+#wget https://download.docker.com/linux/centos/7/x86_64/test/Packages/docker-ce-selinux-17.05.0.ce-0.3.rc3.el7.centos.noarch.rpm
 
 #wget https://download.docker.com/linux/centos/7/x86_64/test/Packages/docker-ce-17.05.0.ce-0.3.rc3.el7.centos.x86_64.rpm
