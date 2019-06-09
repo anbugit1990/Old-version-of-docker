@@ -1,0 +1,30 @@
+yum install --setopt=obsoletes=0 docker-ce-17.05.0.ce-1.el7.centos
+
+
+Install required packages. yum-utils provides the yum-config-manager utility, and device-mapper-persistent-data and lvm2 are required by the devicemapper storage driver.
+
+$ sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+Use the following command to set up the stable repository.
+
+$ sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+Optional: Enable the nightly or test repositories.
+
+These repositories are included in the docker.repo file above but are disabled by default. You can enable them alongside the stable repository. The following command enables the nightly repository.
+
+$ sudo yum-config-manager --enable docker-ce-nightly
+To enable the test channel, run the following command:
+
+$ sudo yum-config-manager --enable docker-ce-test
+You can disable the nightly or test repository by running the yum-config-manager command with the --disable flag. To re-enable it, use the --enable flag. The following command disables the nightly repository.
+
+$ sudo yum-config-manager --disable docker-ce-nightly
+
+#wget https://download.docker.com/linux/centos/7/x8                                                                                   6_64/test/Packages/containerd.io-1.2.0-3.el7.x86_64.rpm
+
+#wget https://download.docker.com/linux/centos/7/x86_64/test/Pa                                                                                      ckages/docker-ce-selinux-17.05.0.ce-0.3.rc3.el7.centos.noarch.rpm
+
+#wget https://download.docker.com/linux/centos/7/x86_64/test/Packages/docker-ce-17.05.0.ce-0.3.rc3.el7.centos.x86_64.rpm
